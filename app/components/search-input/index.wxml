@@ -1,0 +1,21 @@
+<view class='container'>
+
+  <view class='search-icon'>
+    <image src="{{isSearching?activeIcon:staticIcon}}" />
+  </view>
+
+  <input
+    type="text"
+    placeholder="请输入企业名称进行搜索"
+    bind:focus="focus"
+    bind:blur="blur"
+    bind:confirm='search'
+    bindinput='change'
+    value='{{input}}'
+  />
+
+  <view class='delete-icon' wx:if="{{input}}" bind:tap='delete'>
+    <image src="{{deleteIcon}}" />
+  </view>
+
+</view>

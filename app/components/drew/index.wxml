@@ -1,0 +1,27 @@
+<view class='container'>
+
+  <view class='head-container'>
+    <view class='icon-container'>
+      <image src="{{drew}}" />
+    </view>
+    <view class='title'>
+      提现申请已提交！
+    </view>
+  </view>
+
+  <view class='drew-container'>
+    <view>
+      提现金额
+    </view>
+    <view>
+      {{drewNum}}元
+    </view>
+  </view>
+
+  <r-button
+    content='完成'
+    isLegal='{{true}}'
+    bind:duang='duang'
+  />
+
+</view>

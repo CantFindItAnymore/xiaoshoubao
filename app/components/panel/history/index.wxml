@@ -1,0 +1,18 @@
+<view class='container' bind:tap='goHistory'>
+
+  <view class='head-container'>
+    <view>累计成功提现（元）</view>
+    <view class='go-container'>
+      <image src="{{go}}" />
+    </view>
+  </view>
+
+  <view class='detail-container'>
+    {{historyNum}}
+  </view>
+
+  <view class='back-container'>
+    <image src="{{back}}" />
+  </view>
+
+</view>

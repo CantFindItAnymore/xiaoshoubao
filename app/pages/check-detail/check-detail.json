@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "r-check-d-panel": "/components/check/check-d-panel/index"
+  }
+}

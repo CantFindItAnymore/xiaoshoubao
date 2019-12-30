@@ -1,0 +1,14 @@
+<view class='container' bind:tap='toSearchDetail'>
+
+  <view class='name-container'>
+    {{data.name}}
+    <view class='icon-container'>
+      <image src="{{data.statusText==='已认证'?hadIcon:yetIcon}}" />
+    </view>
+  </view>
+
+  <view class='blance-container'><span>账户余额：</span>{{data.balance}}</view>
+
+  <view class='time-container'>注册时间：{{data.registeredDateText}}</view>
+
+</view>

@@ -1,0 +1,45 @@
+.container {
+  height: 226rpx;
+  width: 660rpx;
+  background: #fff;
+  padding: 30rpx;
+  box-shadow: 2rpx 2rpx 8rpx #888;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.name-container {
+  font-size: 32rpx;
+  color: #585A60;
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  display: inline-flex;
+  height: 34rpx;
+  width: 86rpx;
+  margin-left: 10rpx;
+}
+
+.icon-container>image {
+  height: 100%;
+  width: 100%;
+}
+
+.blance-container {
+  font-size: 36rpx;
+  color: #585A60;
+}
+
+.blance-container>span {
+  font-size: 28rpx;
+}
+
+.time-container {
+  font-size: 28rpx;
+  color: #AAAAAA;
+}

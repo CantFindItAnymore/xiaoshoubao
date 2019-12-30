@@ -1,0 +1,39 @@
+<view class='container'>
+
+  <view class='can-draw-container'>
+    <view>可提金额</view>
+    <view>{{canDrawNum}}</view>
+  </view>
+
+  <view class='draw-input-container'>
+    <view class='draw-title'>提现金额</view>
+
+    <view>
+      <view class='input-container'>
+        <view class='draw-icon'>￥</view>
+        <input
+          type='digit'
+          placeholder-class="ph-style"
+          placeholder='请输入提现金额'
+          value='{{drawNum}}'
+          bindinput='change'
+          bind:focus='focus'
+        />
+        <view class='icon-container' wx:if="{{drawNum}}" bind:tap='delete'>
+          <image class='delete-icon' src="{{delete}}" />
+        </view>
+      </view>
+
+      <view class='draw-notice'>
+        {{notice}}
+      </view>
+    </view>
+  </view>
+
+  <r-button
+    content='确认提现'
+    isLegal='{{isLegal}}'
+    bind:duang='duang'
+  />
+
+</view>

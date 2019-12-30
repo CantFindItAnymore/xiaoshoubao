@@ -1,0 +1,17 @@
+<view class="container">
+
+  <view class='list-container' wx:if="{{history.length}}">
+    <block wx:for='{{history}}' wx:key='index'>
+      <r-history-d-panel
+        historyData='{{item}}'
+        panel-style="{{index===0?'first-box':''}}"
+        status-style="{{item.statusText==='处理中'?'pending':''||item.statusText==='成功'?'suc':''||item.statusText==='失败'?'fail':''}}"
+      />
+    </block>
+  </view>
+
+  <view class='no-data-container' wx:if="{{!history.length}}">
+    暂无提现记录
+  </view>
+
+</view>

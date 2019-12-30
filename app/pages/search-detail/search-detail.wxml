@@ -1,0 +1,25 @@
+<view class='container'>
+  <view class='detail-container'>
+    <view class='name-container'>
+      {{detail.name}}
+    </view>
+    <view class='blance-container'>
+      <span>账户余额：</span>{{detail.balance}}
+    </view>
+    <view class='total-container'>
+      历史累计充值：{{detail.countRecharge}}
+    </view>
+    <view class='registe-time-container'>
+      注册时间：{{detail.registeredTimeText}}
+    </view>
+    <view class='attestate-time-container'>
+      认证时间：{{detail.authenticateTimeText}}
+    </view>
+    <view class='had-attestated-container'>
+      企业认证：
+      <view class='icon-container'>
+        <image src="{{detail.statusText==='已认证'?hadIcon:yetIcon}}" />
+      </view>
+    </view>
+  </view>
+</view>

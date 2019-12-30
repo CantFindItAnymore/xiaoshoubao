@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "r-history-d-panel": "/components/history-d-panel/index"
+  }
+}

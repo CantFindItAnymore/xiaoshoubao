@@ -1,0 +1,11 @@
+<view>
+
+  <view class='mask'>
+  </view>
+
+  <view class='notice-container'>
+    <view class='notice'>{{content}}</view>
+    <view class='btn' bind:tap='cancelMask'>知道了</view>
+  </view>
+
+</view>

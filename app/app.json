@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/draw/draw",
+    "pages/check/check",
+    "pages/check-detail/check-detail",
+    "pages/history/history",
+    "pages/search/search",
+    "pages/search-detail/search-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "易来销售宝",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,18 @@
+<view class='container'>
+
+  <r-s-input bind:search='search' bind:delete='delete' />
+
+  <view class='list-container'>
+    <block wx:for='{{componyList}}' wx:key='{{item.id}}'>
+      <r-s-panel
+        class='info-container'
+        data='{{item}}'
+        bind:toSearchDetail='toSearchDetail'
+      />
+    </block>
+  </view>
+
+  <view wx:if='{{!componyList.length}}' class='no-data-container'>
+    未查询到结果
+  </view>
+</view>

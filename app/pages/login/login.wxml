@@ -1,0 +1,50 @@
+<view class='container'>
+  <view class='head-container'>
+    <image src="{{userInfo.avatarUrl || defaultHead}}" />
+  </view>
+
+  <view class='input-container'>
+    <view class='tell-container'>
+      <view class='icon-container'>
+        <image class='phone-icon' src="{{phoneIcon}}" />
+      </view>
+      <input
+        value='{{phone}}'
+        type='number'
+        placeholder-class="ph-style"
+        placeholder='请输入默认的手机号'
+        maxlength='11'
+        bindinput="phoneInput"
+      />
+    </view>
+
+    <view class='key-container'>
+      <view class='icon-container'>
+        <image class='key-icon' src="{{keyIcon}}" />
+      </view>
+      <input
+        value='{{password}}'
+        type='number'
+        placeholder-class="ph-style"
+        placeholder='请输入验证码'
+        maxlength='4'
+        bindinput="passWdInput"
+      />
+      <view
+        class="{{hadPost?'time-container':'get-key-btn'}}"
+        bind:tap='getCode'
+      >
+        {{hadPost?time+'s':code}}
+      </view>
+    </view>
+  </view>
+
+  <r-button
+    class='btn-container'
+    content='登 录'
+    isLegal='{{isLegal}}'
+    open-type="getUserInfo"
+    bind:getuserinfo="duang"
+  />
+
+</view>

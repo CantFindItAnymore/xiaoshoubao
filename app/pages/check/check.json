@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "r-check-list": "/components/check/check-list/index"
+  }
+}

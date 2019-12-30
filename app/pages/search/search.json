@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "r-s-input": "/components/search-input/index",
+    "r-s-panel": "/components/search-panel/index"
+  }
+}

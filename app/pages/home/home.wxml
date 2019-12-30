@@ -1,0 +1,26 @@
+<view class='container'>
+
+  <view class='head-container'>
+    <view class='user-info'>
+      <view>{{data.name}}</view>
+      <view>{{data.phone}}</view>
+    </view>
+    <view class='head-image'>
+      <image src="{{userInfo.avatarUrl || head}}" />
+    </view>
+  </view>
+
+  <view class='panel-container'>
+    <r-draw bind:tap='goDraw' canDraw='{{data.canWithdraw}}'/>
+    <r-checking bind:tap='goCheck' checkingNum='{{data.billReview}}'/>
+    <r-history bind:tap='goHistory' historyNum='{{data.successfulWithdraw}}'/>
+    <r-compony bind:tap='goCompony' componyNum='{{data.enterprisesCount}}'/>
+  </view>
+
+  <view class='footer' bind:tap='call'>
+    联系客服：028-63200326
+  </view>
+
+  <r-mongolia wx:if="{{mask}}" content='您的提现额度为0，无法提现！' bind:cancelMask='cancelMask' />
+
+</view>

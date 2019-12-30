@@ -1,0 +1,13 @@
+<view class='container input-class'>
+
+  <view class='icon-container'>
+    <slot name='before'></slot>
+  </view>
+
+  <input type='{{type}}' placeholder-class='ph-style' placeholder='{{placeholder}}' />
+
+  <view class='icon-container'>
+    <slot name='after'></slot>
+  </view>
+
+</view>

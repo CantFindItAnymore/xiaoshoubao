@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 60rpx 45rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #EFEFEF;
+}
+
+.rule-container {
+  /* background: pink; */
+  width: 100%;
+  margin-top: 60rpx;
+  padding: 30rpx 10rpx;
+  border: 1rpx dashed #F69603;
+  border-radius: 6rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #AAAAAA;
+  box-sizing: border-box;
+}
+
+.weight-rule {
+  color: #F69603;
+}

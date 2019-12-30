@@ -1,0 +1,29 @@
+<view class='container'>
+  <view wx:if='{{!hadClick}}'>
+    <r-draw
+      canDrawNum='{{data.canWithdraw}}'
+      minNum='{{data.withdrawalMin}}'
+      maxNum='{{data.withdrawalMax}}'
+      notice='{{data.withdrawalText}}'
+      hadDrewToday='{{data.withdrawMark}}'
+      isLegal='{{isLegal}}'
+      bind:legal='toLegal'
+      bind:iilegal='toIilegal'
+      bind:duang='giveMeMoney'
+    />
+
+    <view class='rule-container'>
+      <view class='weight-rule'>1. 确保您的微信账户已实名认证，否则无法提现。 </view>
+      <view>2. 每天可提现1次。</view>
+      <view>3. 提现金额直接到您的微信零钱。</view>
+      <view>4. 提现成功后预计2个工作日内到账。</view>
+    </view>
+  </view>
+
+  <view wx:if='{{hadClick}}'>
+    <r-drew
+      drewNum='{{drewNum}}'
+      bind:duang='finished'
+    />
+  </view>
+</view>

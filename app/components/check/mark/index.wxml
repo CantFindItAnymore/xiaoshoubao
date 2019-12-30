@@ -1,0 +1,15 @@
+<view class='container' bind:tap='toDetail'>
+
+  <view class='head-container'>
+    <view>提成</view>
+    <view class='go-container'>
+      <image src="{{go}}" />
+    </view>
+  </view>
+
+  <view class='info-container'>
+    <view>{{checkData.rechargeTimeText}}</view>
+    <view>{{checkData.amount}}</view>
+  </view>
+
+</view>

@@ -1,0 +1,23 @@
+<view class='container'>
+  <view class='head-container'>
+    <view
+      class="{{isChecking?'selected':''}}"
+      bind:tap='goChecking'
+    >
+      审核中
+    </view>
+    <view
+      class="{{isChecking?'':'selected'}}"
+      bind:tap='goChecked'
+    >
+      已审核
+    </view>
+  </view>
+
+  <r-check-list
+    checkData='{{isChecking?checkingData:checkedData}}'
+    bind:toDetail='toDetail'
+    hasData='{{isChecking?(checkingData.length!==0):(checkedData.length!==0)}}'
+  />
+
+</view>

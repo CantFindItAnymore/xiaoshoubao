@@ -1,0 +1,21 @@
+<view class='container' bind:tap='goDraw'>
+
+  <view class='head-container'>
+    <view>可提现（元）</view>
+    <view>
+      去提现
+      <view class='go-container'>
+        <image src="{{go}}" />
+      </view>
+    </view>
+  </view>
+
+  <view class='detail-container'>
+    {{canDraw}}
+  </view>
+
+  <view class='back-container'>
+    <image src="{{back}}" />
+  </view>
+
+</view>

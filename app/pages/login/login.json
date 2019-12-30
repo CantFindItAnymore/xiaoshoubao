@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "r-button": "/components/button/index"
+  }
+}

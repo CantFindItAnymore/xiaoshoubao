@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "r-draw": "/components/draw-detail/index",
+    "r-drew": "/components/drew/index"
+  }
+}

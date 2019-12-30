@@ -1,0 +1,10 @@
+<view class='container panel-style'>
+  <view class='componyName-container'><view class='componyName'>{{detail.name}}</view></view>
+  <view class='drawNum-container'>
+    提成金额：
+    <view class='drawNum'>{{detail.amount}}</view>
+  </view>
+  <view class='rechargeTime-container'>充值时间：<view class='rechargeTime'>{{detail.rechargeTimeText}}</view></view>
+  <view class='rechargeNum-container'>充值金额：<view class='rechargeNum'>{{detail.rechargeAmount}}</view></view>
+  <view class='drawRate-container'>提成比例：<view class='drawRate'>{{detail.ratio}}</view></view>
+</view>

@@ -1,0 +1,17 @@
+<view class='container panel-style'>
+
+  <view class="head-container">
+    <view class="title">提现</view>
+    <view
+      class="status status-style"
+    >
+      {{historyData.statusText}}
+    </view>
+  </view>
+
+  <view class="info-container">
+    <view class="time">{{historyData.timeText}}</view>
+    <view class="money">{{historyData.amount}}</view>
+  </view>
+
+</view>

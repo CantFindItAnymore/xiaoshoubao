@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "r-draw": "/components/panel/draw/index",
+    "r-checking": "/components/panel/checking/index",
+    "r-history": "/components/panel/history/index",
+    "r-compony": "/components/panel/compony/index",
+    "r-mongolia": "/components/mongolia/index"
+  }
+}

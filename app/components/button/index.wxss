@@ -1,0 +1,24 @@
+.btn-container {
+  width: 510rpx;
+  height: 98rpx;
+}
+
+.can {
+  border-radius: 59rpx;
+  background: #F69603;
+  color: #fff;
+}
+
+.can:active {
+  background: #ef7052;
+}
+
+.cant {
+  border-radius: 59rpx;
+  background: #D8D8D8;
+  color: #fff;
+}
+
+/* .button-hover {
+  background: #ef7052;
+} */

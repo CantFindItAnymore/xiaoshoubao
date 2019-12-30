@@ -1,0 +1,82 @@
+.container {
+  width: 540rpx;
+  height: 150rpx;
+  padding: 30rpx 0;
+  border-top: 1rpx solid #D8D8D8;
+  /* background: gold; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.head-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title {
+  font-size: 32rpx;
+  color: #585A60;
+}
+
+.status {
+  font-size: 28rpx;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* background: pink; */
+}
+
+.time {
+  font-size: 28rpx;
+  color: #585A60;
+  /* background: gold; */
+}
+
+.money {
+  font-size: 36rpx;
+  color: #585A60;
+  /* background: teal; */
+}
+
+/* .componyName-container {
+  font-size: 32rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.componyName {
+  display: inline-block;
+}
+
+.drawNum-container {
+  font-size: 28rpx;
+  margin: 20rpx 0;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.rechargeTime-container,
+.rechargeNum-container,
+.drawRate-container {
+  font-size: 28rpx;
+  color: #AAAAAA;
+  height: 50rpx;
+  line-height: 50rpx;
+  display: flex;
+}
+
+.drawNum {
+  font-size: 36rpx;
+  display: inline-block;
+}
+
+.rechargeTime,
+.rechargeNum,
+.drawRate {
+  color: #AAAAAA;
+} */

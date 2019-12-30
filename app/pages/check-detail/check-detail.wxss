@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FAFAFA;
+  padding-bottom: 50rpx;
+}
+
+.container:before {
+  content: '';
+  display: block;
+}
+
+.head {
+  width: 660rpx;
+  height: 160rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailTime {
+  font-size: 32rpx;
+  color: #585A60;
+}
+
+.totalNum {
+  font-size: 28rpx;
+  color: #585A60;
+}
+
+
+.list-container {
+  width: 660rpx;
+  padding-top: 30rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2rpx 2rpx 8rpx #888;
+  border-radius: 10rpx;
+  /* box-sizing: border-box; */
+}
+
+.list-container:before {
+  content: '';
+  display: table;
+}
+
+.first-box {
+  border: none !important;
+  /* background: gold !important; */
+}

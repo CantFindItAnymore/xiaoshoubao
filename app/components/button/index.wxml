@@ -1,0 +1,11 @@
+<view class='btn-container'>
+  <button
+    disabled="{{!isLegal}}"
+    class="{{isLegal?'can':'cant'}}"
+    bind:tap='duang'
+    open-type='{{openType}}'
+    bind:getuserinfo="getUserInfo"
+  >
+    {{content}}
+  </button>
+</view>

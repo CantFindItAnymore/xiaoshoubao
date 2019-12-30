@@ -1,0 +1,14 @@
+<view class="container">
+
+  <view class='head'>
+    <view class="detailTime">{{detailTime}}</view>
+    <view class="totalNum">提成总额：{{filterData.monthAmount}}</view>
+  </view>
+
+  <view class='list-container'>
+    <block wx:for='{{filterData.billDetailsList}}' wx:key='index'>
+      <r-check-d-panel detail='{{item}}' panel-style="{{index===0?'first-box':''}}"/>
+    </block>
+  </view>
+
+</view>

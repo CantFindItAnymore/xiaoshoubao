@@ -1,0 +1,18 @@
+<view class='container' bind:tap='goCheck'>
+
+  <view class='head-container'>
+    <view>账单审核中（元）</view>
+    <view class='go-container'>
+      <image src="{{go}}" />
+    </view>
+  </view>
+
+  <view class='detail-container'>
+    {{checkingNum}}
+  </view>
+
+  <view class='back-container'>
+    <image src="{{back}}" />
+  </view>
+
+</view>

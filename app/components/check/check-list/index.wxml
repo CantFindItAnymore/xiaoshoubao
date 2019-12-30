@@ -1,0 +1,12 @@
+<view class='container'>
+  <block wx:for='{{checkData}}' wx:key='{{index}}'>
+    <r-mark
+      checkData='{{item}}'
+      bind:toDetail='toDetail'
+    />
+  </block>
+
+  <view class='no-data-container' wx:if="{{!hasData}}">
+    暂无账单
+  </view>
+</view>

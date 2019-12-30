@@ -1,0 +1,44 @@
+.container {
+  height: 88rpx;
+  width: 660rpx;
+  background: #fff;
+  /* box-shadow: 2rpx 2rpx 8rpx #888; */
+  border-radius: 10rpx;
+  border: 1rpx solid #AAAAAA;
+  display: flex;
+}
+
+.search-icon {
+  height: 100%;
+  width: 88rpx;
+}
+
+.search-icon>image {
+  height: 43.2%;
+  width: 43.2%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  flex: 1;
+  height: 100%;
+  /* color: #AAAAAA; */
+  font-size: 28rpx;
+}
+
+.delete-icon {
+  height: 100%;
+  width: 88rpx;
+}
+
+.delete-icon>image {
+  height: 43.2%;
+  width: 43.2%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
